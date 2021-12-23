@@ -44,7 +44,6 @@ public class UtenteDAOImpl implements UtenteDAO {
 			if(resultSet.next()) {
 				return cifratura.AES.decrypt(resultSet.getString("pwd"), "chiaveCifratura"); 
 			} else {	
-				System.out.println("Nome utente non presente");
 				return "";
 			}
 				

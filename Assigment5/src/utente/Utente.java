@@ -15,7 +15,7 @@ public class Utente {
 		if(user == null && pwd == null) throw new NullPointerException("Nome utente e password non validi");
 		
 		if(!Validazione.isValido(user) && !Validazione.isValido(pwd)) {
-			System.out.println("Username e password non validi");	
+			System.out.println("Username o password non validi");	
 		}
 		
 		ut = new UtenteDAOImpl();
